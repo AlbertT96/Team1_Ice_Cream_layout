@@ -3,20 +3,20 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://albertt96.github.io/Team1_Ice_Cream_layout/",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /Team1_Ice_Cream_layout/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/AlbertT96/Team1_Ice_Cream_layout"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Team1 GoIt Academy 2021",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/AlbertT96/Team1_Ice_Cream_layout/issues"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
