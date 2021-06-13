@@ -1,0 +1,43 @@
+:root {
+  --main-font: 'DM Sans', sans-serif;
+  --secoundary-font: 'Titan One', sans-serif;
+  --main--color: #fff;
+  --secoundary--color: #d41443;
+  --third--color: #ffa5ba;
+  --main-background-color: #fff;
+  --secoundary-background-color: #fff5f6;
+}
+
+body {
+  font-family: var(--main--font);
+  background-color: var(--main-background-color);
+  color: var(--main--color);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+p {
+  padding: 0;
+}
+list {
+  list-style: none;
+}
+link {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
