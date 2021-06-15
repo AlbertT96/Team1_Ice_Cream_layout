@@ -1,0 +1,52 @@
+@media screen and (min-width: 320px) {
+  .contacts-card__item {
+    color: black;
+  }
+
+  .contacts .container {
+    display: block;
+    background-color: grey;
+  }
+  .branch__container {
+    box-sizing: border-box;
+    width: calc(100vw - 100px);
+    height: auto;
+    margin: 20px auto;
+    padding: 43px 20px;
+    border-radius: 20px;
+    background-color: var(--main--color);
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+      0 1px 2px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .branch__name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin-bottom: 25px;
+  }
+
+  .branch__name-container--brown {
+    background-color: #f0d1a5;
+    width: 80px;
+    height: 16px;
+  }
+
+  .branch__name-container--green {
+    background-color: #c2e297;
+    width: 130px;
+    height: 16px;
+  }
+
+  .branch__name {
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+  }
+}
