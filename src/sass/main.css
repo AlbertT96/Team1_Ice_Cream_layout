@@ -1,0 +1,203 @@
+@charset "UTF-8";
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
+:root {
+  --main-font: 'DM Sans', sans-serif;
+  --secondary-font: 'Titan One', cursive;
+  --main--color: #fff;
+  --secondary--color: #d41443;
+  --third--color: #ffa5ba;
+  --color-hover-grey: #ECEBEB;
+  --color-hover-red: #C7133E;
+  --main-background-color: #fff;
+  --secondary-background-color: #fff5f6;
+  --hamburger-background-color: #E17992;
+  --border-hamburger-menu: #E18298;
+}
+
+body {
+  font-family: var(--main--font);
+  background-color: var(--main-background-color);
+  color: var(--main--color);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.hamburger {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--hamburger-background-color);
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.hamburger__close-btn {
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--main--color);
+  cursor: pointer;
+}
+
+.hamburger-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 60px;
+}
+
+.btn__buy {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: calc(100% - 34px);
+  height: 44px;
+  border: 1px solid transparent;
+  background: var(--main-background-color);
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--secondary--color);
+  font-family: var(--main-font);
+}
+
+.btn__buy:hover {
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  background: var(--color-hover-grey);
+}
+
+.btn__svg {
+  margin-left: 20px;
+  width: 6px;
+  height: 8px;
+  fill: var(--secondary--color);
+}
+
+.btn__close {
+  width: 14px;
+  height: 14px;
+}
+
+.hamburger__menu {
+  position: absolute;
+  top: 123px;
+  left: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu__list {
+  padding: 0;
+}
+
+.menu__link {
+  display: inline;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--main--color);
+  font-family: var(--main-font);
+}
+
+.menu__link:focus, .menu__link:hover {
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  color: var(--secondary--color);
+}
+
+.menu__link.last::after {
+  content: '';
+  display: inline-block;
+  width: 100vw;
+  height: 1px;
+  background-color: var(--border-hamburger-menu);
+  position: relative;
+  left: -24px;
+  bottom: -5px;
+}
+
+.menu__link::before {
+  content: '';
+  display: inline-block;
+  width: 100vw;
+  height: 1px;
+  background-color: var(--border-hamburger-menu);
+  position: relative;
+  left: -24px;
+  bottom: 5px;
+}
+/*# sourceMappingURL=main.css.map */
