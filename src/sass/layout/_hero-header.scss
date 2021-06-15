@@ -1,0 +1,31 @@
+.hero-header{
+    background-color: var(--background-color-pink);
+    overflow: hidden;
+
+}
+
+.header-list{
+    display: flex;
+    justify-content: space-between;
+
+    &__items:first-child{
+        width: 199px;
+        height: 50px;
+    }
+      &--margin{
+        margin: 0 20px ;
+    }
+}
+
+.hero{
+    &-list{
+      &__items{
+          display: inline;
+      }
+    }
+
+    &--margin{
+        margin: 137px 20px 160px;
+    }
+
+}
