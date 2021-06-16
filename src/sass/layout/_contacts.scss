@@ -5,8 +5,13 @@
 
   .contacts .container {
     display: block;
-    background-color: grey;
+    background-image: linear-gradient(
+      to bottom,
+      var(--main--color) 8%,
+      var(--secoundary-background-color) 8%
+    );
   }
+  
   .branch__container {
     box-sizing: border-box;
     width: calc(100vw - 100px);
@@ -42,11 +47,26 @@
 
   .branch__name {
     box-sizing: border-box;
-    font-family: var(--main-font);
     font-weight: 500;
     font-size: 12px;
     line-height: 186%;
     letter-spacing: 0.04em;
     color: #ffffff;
   }
+
+  .branch__city {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  .branch__description {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #907E82;
+  }
+
 }
