@@ -1,0 +1,48 @@
+.hero-header {
+  background-color: var(--background-color-pink);
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+
+  &__icecream {
+    z-index: 1;
+    width: 171px;
+    height: 410px;
+    position: absolute;
+    top: 92px;
+    left: 117px;
+  }
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-between;
+
+  &__items:first-child {
+    width: 199px;
+    height: 50px;
+  }
+  &--margin {
+    margin: 6px 20px 0;
+  }
+}
+
+.hero {
+  position: relative;
+  z-index: 2;
+  &-list {
+    &__items {
+      display: inline;
+    }
+  }
+
+  &--margin {
+    margin: 137px 20px 160px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1280px) {
+}
