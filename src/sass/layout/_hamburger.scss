@@ -1,0 +1,118 @@
+.hamburger {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--hamburger-background-color);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  @media  screen and (min-width: 768px) {
+      display: none;
+      
+  }
+
+}
+
+.hamburger__close-btn {
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--main--color);
+  cursor:pointer;
+}
+
+.hamburger-btn {
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.btn__buy {
+    cursor:pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0 auto;
+  width: calc(100% - 34px);
+  height: 44px;
+  border: 1px solid transparent;
+  background: var(--main-background-color);
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--secondary--color);
+  font-family: var(--main-font);
+  &:hover{
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+      background: var(--color-hover-grey);
+  }
+}
+
+.btn__svg {
+    margin-left:20px;
+  width: 6px;
+  height: 8px;
+  fill: var(--secondary--color);
+}
+.btn__close{
+    width: 14px;
+    height: 14px;
+}
+
+.hamburger__menu {
+  position: absolute;
+  top: 123px;
+  left: 24px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.menu__list {
+  padding: 0;
+}
+
+
+.menu__link {
+  display: inline;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--main--color);
+  font-family: var(--main-font);
+
+  &:focus,
+  &:hover {
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    color: var(--secondary--color);
+  }
+}
+
+.menu__link.last::after {
+  content: '';
+  display: inline-block;
+  width: 100vw;
+  height: 1px;
+  background-color: var(--border-hamburger-menu);
+  position: relative;
+  left: -24px;
+  bottom: -5px;
+}
+
+.menu__link::before {
+  content: '';
+  display: inline-block;
+  width: 100vw;
+  height: 1px;
+  background-color: var(--border-hamburger-menu);
+  position: relative;
+  left: -24px;
+  bottom: 5px;
+}
