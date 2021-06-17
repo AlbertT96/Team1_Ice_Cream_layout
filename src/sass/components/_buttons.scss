@@ -31,3 +31,27 @@
     margin-top: 14px;   
   }
 }
+
+/* Tutaj macie stylowanie buttona */
+
+.btn {
+  /*szerokość ustawcie sobie swoją.
+  kolor fontu, i backgroundu, reszta jest */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  border: 1px solid transparent;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: var(--main-font);
+
+}
+
+
+
+
+
+
