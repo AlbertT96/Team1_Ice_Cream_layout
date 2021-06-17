@@ -3,40 +3,18 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
-}
-
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #009688;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
-}
-
-.example .background {
-  height: 240px;
-  background-image: url("../images/demo.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
 :root {
   --main-font: 'DM Sans', sans-serif;
-  --secoundary-font: 'Titan One', sans-serif;
+  --secondary-font: 'Titan One', cursive;
   --main--color: #fff;
-  --secoundary--color: #d41443;
+  --secondary--color: #d41443;
   --third--color: #ffa5ba;
+  --color-hover-grey: #ECEBEB;
+  --color-hover-red: #C7133E;
   --main-background-color: #fff;
-  --secoundary-background-color: #fff5f6;
+  --secondary-background-color: #fff5f6;
+  --hamburger-background-color: #E17992;
+  --border-hamburger-menu: #E18298;
 }
 
 body {
@@ -66,7 +44,7 @@ p {
   padding: 0;
 }
 
-list {
+li {
   list-style: none;
 }
 
@@ -76,5 +54,150 @@ link {
 
 img {
   display: block;
+}
+
+.hamburger {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--hamburger-background-color);
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.hamburger__close-btn {
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--main--color);
+  cursor: pointer;
+}
+
+.hamburger-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 60px;
+}
+
+.btn__buy {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: calc(100% - 34px);
+  height: 44px;
+  border: 1px solid transparent;
+  background: var(--main-background-color);
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--secondary--color);
+  font-family: var(--main-font);
+}
+
+.btn__buy:hover {
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  background: var(--color-hover-grey);
+}
+
+.btn__svg {
+  margin-left: 20px;
+  width: 6px;
+  height: 8px;
+  fill: var(--secondary--color);
+}
+
+.btn__close {
+  width: 14px;
+  height: 14px;
+}
+
+.hamburger__menu {
+  position: absolute;
+  top: 123px;
+  left: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu__list {
+  padding: 0;
+}
+
+.menu__link {
+  display: inline;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--main--color);
+  font-family: var(--main-font);
+}
+
+.menu__link:focus, .menu__link:hover {
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  color: var(--secondary--color);
+}
+
+.menu__link.last::after {
+  content: '';
+  display: inline-block;
+  width: 100vw;
+  height: 1px;
+  background-color: var(--border-hamburger-menu);
+  position: relative;
+  left: -24px;
+  bottom: -5px;
+}
+
+.menu__link::before {
+  content: '';
+  display: inline-block;
+  width: 100vw;
+  height: 1px;
+  background-color: var(--border-hamburger-menu);
+  position: relative;
+  left: -24px;
+  bottom: 5px;
 }
 /*# sourceMappingURL=main.css.map */

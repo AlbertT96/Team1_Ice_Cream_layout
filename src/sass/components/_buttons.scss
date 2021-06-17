@@ -1,0 +1,33 @@
+.button {
+  border: none;
+  border-radius: 20px;
+  font-family:  var(--main--font);
+
+  &--hero-red {
+    width: 62.4px;
+    height: 24px;
+    background-color: var(--secondary--color);
+    color: var(--main--color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+  }
+
+  &--hero-white {
+    width: 82.8px;
+    height: 24px;
+    background-color: var(--main--color);
+    color: var(--secondary--color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+  }
+
+  &-svg{
+    background-color: transparent;
+    border: none; 
+    margin-top: 14px;   
+  }
+}
