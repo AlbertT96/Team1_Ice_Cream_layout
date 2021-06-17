@@ -5,4 +5,14 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 @import './base/common';
+
+@import './layout/contacts';
+
+@import './components/titles';
+@import './components/buttons';
+
+@import './layout/hamburger';
+
 @import './layout/hero-header';
+@import './layout/about';
+
