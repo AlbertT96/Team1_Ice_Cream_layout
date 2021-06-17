@@ -10,8 +10,9 @@
   --color-hover-red: #C7133E;
   --main-background-color: #fff;
   --secondary-background-color: #fff5f6;
+  --hamburger-background-color: #E17992;
+  --border-hamburger-menu: #E18298;
   --background-color-pink: #FFB8CA;
-
 }
 
 body {
@@ -37,12 +38,14 @@ ol {
 }
 p {
   padding: 0;
+  margin: 0;
 }
 li {
   list-style: none;
 }
 link {
   text-decoration: none;
+  color: inherit;
 }
 img {
   display: block;
