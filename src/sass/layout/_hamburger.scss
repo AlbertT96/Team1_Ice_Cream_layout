@@ -1,5 +1,6 @@
 .hamburger {
-  display: none;
+  top:0;
+  left:0;
   width: 100vw;
   height: 100vh;
   background-color: var(--hamburger-background-color);
@@ -31,21 +32,13 @@
   margin-top: 60px;
 }
 
-.btn__buy {
-    cursor:pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.btn.ham{
+  
   margin:0 auto;
   width: calc(100% - 34px);
-  height: 44px;
-  border: 1px solid transparent;
   background: var(--main-background-color);
-  border-radius: 22px;
-  font-weight: 700;
-  font-size: 16px;
-  color: var(--secondary--color);
   font-family: var(--main-font);
+  color: var(--secondary--color);
   &:hover{
       transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
       background: var(--color-hover-grey);
@@ -61,6 +54,7 @@
 .btn__close{
     width: 14px;
     height: 14px;
+  
 }
 
 .hamburger__menu {
