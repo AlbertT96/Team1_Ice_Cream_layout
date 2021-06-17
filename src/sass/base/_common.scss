@@ -36,12 +36,14 @@ ol {
 }
 p {
   padding: 0;
+  margin: 0;
 }
 li {
   list-style: none;
 }
 link {
   text-decoration: none;
+  color: inherit;
 }
 img {
   display: block;
