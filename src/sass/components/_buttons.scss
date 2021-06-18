@@ -50,6 +50,88 @@
 
 }
 
+/* ==== CONTACTS BUTTONS ===*/
+@media screen and (min-width: 320px) {
+  .btn-location {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 54px;
+    margin-bottom: 10px;
+    width: 161.45px;
+    height: 44px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.312;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--main--color);
+    background-color: #d41443;
+
+    &:hover,
+    &:focus {
+      background-color: #c7133e;
+    }
+  }
+
+  .btn-franchise {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 161.45px;
+    height: 44px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.312;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--secondary--color);
+    background-color: var(--main--color);
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-location {
+    display: inline;
+    margin-top: 81px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 15px;
+    width: 191.45px;
+  }
+
+  .btn-franchise {
+    display: inline;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 81px;
+    width: 174.05px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .btn-location,
+  .btn-franchise {
+    margin-top: 86px;
+  }
+}
+
+/* ==== END CONTACTS BUTTONS ===*/
+
 
 
 

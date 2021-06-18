@@ -3,7 +3,11 @@
     box-sizing: border-box;
     display: block;
     padding-bottom: 113px;
-    background-image: linear-gradient(to bottom, var(--main--color) 5%, #fff5f6 5%);
+    background-image: linear-gradient(
+      to bottom,
+      var(--main--color) 5%,
+      var(--secondary-background-color) 5%
+    );
   }
 
   .branch__container {
@@ -29,13 +33,13 @@
   }
 
   .branch__name-container--brown {
-    background-color: #f0d1a5;
+    background-color: var(--contact-cafe-color);
     width: 80px;
     height: 16px;
   }
 
   .branch__name-container--green {
-    background-color: #c2e297;
+    background-color: var(--contact-food-color);
     width: 130px;
     height: 16px;
   }
@@ -46,7 +50,7 @@
     font-size: 12px;
     line-height: 186%;
     letter-spacing: 0.04em;
-    color: #ffffff;
+    color: var(--main--color);
   }
 
   .branch__city {
@@ -54,14 +58,14 @@
     font-size: 12px;
     line-height: 186%;
     letter-spacing: 0.04em;
-    color: #000000;
+    color: var(--fourth--color);
     margin-bottom: 10px;
   }
   .branch__description {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.5;
-    color: #907e82;
+    color: var(--fifth--color);
     margin-bottom: 25px;
   }
 
@@ -74,14 +78,14 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 186%;
-    color: #000000;
+    color: var(--fourth--color);
   }
 
   .branch__hours {
     font-weight: 500;
     font-size: 12px;
     line-height: 186%;
-    color: #ffa5ba;
+    color: var(--third--color);
   }
 
   .working-day__list {
@@ -102,57 +106,15 @@
   }
 
   /*=====CONTACTS BUTTONS =====*/
-
-  .btn-location {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 54px;
-    margin-bottom: 10px;
-    width: 161.45px;
-    height: 44px;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.312;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: var(--main--color);
-    background-color: #d41443;
-
-    &:hover,
-    &:focus {
-      background-color: #c7133e;
-    }
-  }
-
-  .btn-franchise {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 161.45px;
-    height: 44px;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.312;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: var(--secondary--color);
-    background-color: var(--main--color);
-
-    &:hover,
-    &:focus {
-      background-color: #ecebeb;
-    }
-  }
 }
 
 @media screen and (min-width: 768px) {
   .contacts .container {
-    background-image: linear-gradient(to bottom, var(--main--color) 10%, #fff5f6 10%);
+    background-image: linear-gradient(
+      to bottom,
+      var(--main--color) 10%,
+      var(--secondary-background-color) 10%
+    );
     padding-bottom: 158px;
   }
 
@@ -222,40 +184,17 @@
   }
 
   /*=====CONTACTS BUTTONS =====*/
-
-  .contacts__buttons {
-    display: flex;
-    justify-content: center;
-  }
-
-  .btn-location {
-    display: inline;
-    margin-top: 81px;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 15px;
-    width: 191.45px;
-  }
-
-  .btn-franchise {
-    display: inline;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 81px;
-    width: 174.05px;
-  }
 }
 
 @media screen and (min-width: 1280px) {
   .contacts .container {
     padding-bottom: 165px;
     background-image: url('../images/contacts/contacts-bgr.png'),
-      linear-gradient(to bottom, var(--main--color) 12%, #fff5f6 12%);
+      linear-gradient(to bottom, var(--main--color) 12%, var(--secondary-background-color) 12%);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 50% 50%;
+    background-position: 50% 23%;
   }
-  /* add media pixel ratio*/
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -263,7 +202,7 @@
     (min-resolution: 2dppx) {
     .contacts .container {
       background-image: url('../images/contacts/contacts-bgr@2x.png'),
-        linear-gradient(to bottom, var(--main--color) 12%, #fff5f6 12%);
+        linear-gradient(to bottom, var(--main--color) 12%, var(--secondary-background-color) 12%);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: 50% 50%;
@@ -293,10 +232,5 @@
   .tel__link,
   .mail__link {
     font-size: 16px;
-  }
-
-  .btn-location,
-  .btn-franchise {
-    margin-top: 86px;
   }
 }
