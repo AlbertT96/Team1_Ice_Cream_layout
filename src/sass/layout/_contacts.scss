@@ -8,7 +8,7 @@
 
   .branch__container {
     box-sizing: border-box;
-    width: calc(100vw - 100px);
+    width: calc(95vw - 100px);
     height: auto;
     margin: 20px auto;
     padding: 43px 20px;
@@ -50,8 +50,8 @@
   }
 
   .branch__city {
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 12px;
     line-height: 186%;
     letter-spacing: 0.04em;
     color: #000000;
@@ -59,7 +59,7 @@
   }
   .branch__description {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.5;
     color: #907e82;
     margin-bottom: 25px;
@@ -71,15 +71,15 @@
   }
 
   .branch__days {
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 12px;
     line-height: 186%;
     color: #000000;
   }
 
   .branch__hours {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 186%;
     color: #ffa5ba;
   }
@@ -109,12 +109,44 @@
     margin-right: auto;
     margin-top: 54px;
     margin-bottom: 10px;
+    width: 161.45px;
+    height: 44px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.312;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--main--color);
+    background-color: #d41443;
+
+    &:hover,
+    &:focus {
+      background-color: #c7133e;
+    }
   }
 
   .btn-franchise {
     display: block;
     margin-right: auto;
     margin-left: auto;
+    width: 161.45px;
+    height: 44px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.312;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--secondary--color);
+    background-color: var(--main--color);
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
   }
 }
 
@@ -122,6 +154,13 @@
   .contacts .container {
     background-image: linear-gradient(to bottom, var(--main--color) 10%, #fff5f6 10%);
     padding-bottom: 158px;
+  }
+
+  .branch__container {
+    padding: 50px 31px;
+    margin: 0 auto;
+    width: calc((95vw - 72px) / 3);
+    margin-bottom: 0;
   }
 
   .contacts__list {
@@ -132,9 +171,54 @@
     margin-right: auto;
   }
 
-  .branch__container {
-    width: calc((88vw - 72px) / 3);
-    margin-bottom: 0;
+  .branch__name-container {
+    margin-bottom: 30px;
+  }
+
+  .branch__name-container--brown {
+    width: 73px;
+    height: 28px;
+  }
+
+  .branch__name-container--green {
+    width: 138px;
+    height: 28px;
+  }
+
+  .branch__name {
+    font-size: 16px;
+  }
+
+  .branch__city {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+
+  .branch__description {
+    font-size: 14px;
+    line-height: 166%;
+    margin-bottom: 30px;
+  }
+
+  .branch__border {
+    margin-bottom: 30px;
+  }
+
+  .branch__days {
+    font-size: 14px;
+  }
+
+  .branch__hours {
+    font-size: 14px;
+  }
+  .tel__link,
+  .mail__link {
+    font-size: 14px;
+    line-height: 183%;
+  }
+
+  .weekend-day__list {
+    margin-bottom: 30px;
   }
 
   /*=====CONTACTS BUTTONS =====*/
@@ -150,9 +234,7 @@
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 15px;
-    /*justify-content: center;
-    align-items: center;
-    align-content: center;*/
+    width: 191.45px;
   }
 
   .btn-franchise {
@@ -160,8 +242,61 @@
     margin-left: 0;
     margin-right: 0;
     margin-top: 81px;
-    /*justify-content: center;
-    align-items: center;
-    align-content: center;*/
+    width: 174.05px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts .container {
+    padding-bottom: 165px;
+    background-image: url('../images/contacts/contacts-bgr.png'),
+      linear-gradient(to bottom, var(--main--color) 12%, #fff5f6 12%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+  }
+  /* add media pixel ratio*/
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .contacts .container {
+      background-image: url('../images/contacts/contacts-bgr@2x.png'),
+        linear-gradient(to bottom, var(--main--color) 12%, #fff5f6 12%);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 50% 50%;
+    }
+  }
+
+  .branch__container {
+    width: calc((95vw - 230px) / 3);
+    max-width: 330px;
+    padding: 51px 68px 62px 43px;
+  }
+
+  .contacts-card__item:nth-child(1),
+  .contacts-card__item:nth-child(2) {
+    margin-right: 31px;
+  }
+
+  .contacts__list {
+    max-width: 1280px;
+    justify-content: center;
+  }
+
+  .branch__city,
+  .branch__description,
+  .branch__days,
+  .branch__hours,
+  .tel__link,
+  .mail__link {
+    font-size: 16px;
+  }
+
+  .btn-location,
+  .btn-franchise {
+    margin-top: 86px;
   }
 }
