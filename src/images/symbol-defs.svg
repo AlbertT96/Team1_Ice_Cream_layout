@@ -13,5 +13,13 @@
 <path fill="#ffa5ba" style="fill: var(--color1, #ffa5ba)" d="M32.186 16c0 8.837-7.205 16-16.093 16s-16.093-7.163-16.093-16c0-8.837 7.205-16 16.093-16s16.093 7.163 16.093 16z"></path>
 </symbol>
 
+<symbol id="icon-icon-pink-ellipse" viewBox="0 0 32 32">
+<path fill="#ffa5ba" style="fill: var(--color1, #ffa5ba)" d="M32.199 16c0 8.837-7.208 16-16.099 16s-16.099-7.163-16.099-16c0-8.837 7.208-16 16.099-16s16.099 7.163 16.099 16z"></path>
+</symbol>
+
+<symbol id="icon-icon-white-ellipse" viewBox="0 0 32 32">
+<path fill="#fff" style="fill: var(--color2, #fff)" d="M0 16c0 8.837 7.163 16 16 16s16-7.163 16-16c0-8.837-7.163-16-16-16s-16 7.163-16 16z"></path>
+</symbol>
+
 </defs>
 </svg>
