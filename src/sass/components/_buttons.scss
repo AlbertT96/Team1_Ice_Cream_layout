@@ -1,7 +1,7 @@
 .button {
   border: none;
   border-radius: 20px;
-  font-family:  var(--main--font);
+  font-family: var(--main-font);
 
   &--hero-red {
     width: 62.4px;
@@ -12,6 +12,14 @@
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
+    text-align: center;
+
+    @media screen and (min-width: 1280px) {
+      width: 104px;
+      height: 40px;
+      font-size: 14px;
+      line-height: 1.286;
+    }
   }
 
   &--hero-white {
@@ -23,12 +31,25 @@
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
+    text-align: center;
+
+    @media screen and (min-width: 1280px) {
+      width: 138px;
+      height: 40px;
+      font-size: 14px;
+      line-height: 1.286;
+    }
+
+    // &:hover{
+    // background: red;
+    // }
   }
 
-  &-svg{
+  &-svg {
+    // z-index: 5; w hamburger
+    position: absolute;
     background-color: transparent;
-    border: none; 
-    margin-top: 14px;   
+    border: none;
   }
 }
 
