@@ -11,9 +11,18 @@
 <path fill="#ffa5ba" style="fill: var(--color1, #ffa5ba)" d="M32.186 16c0 8.837-7.205 16-16.093 16s-16.093-7.163-16.093-16c0-8.837 7.205-16 16.093-16s16.093 7.163 16.093 16z"></path>
 </symbol>
 
+<symbol id="icon-icon-pink-ellipse" viewBox="0 0 32 32">
+<path fill="#ffa5ba" style="fill: var(--color1, #ffa5ba)" d="M32.199 16c0 8.837-7.208 16-16.099 16s-16.099-7.163-16.099-16c0-8.837 7.208-16 16.099-16s16.099 7.163 16.099 16z"></path>
+</symbol>
+
+<symbol id="icon-icon-white-ellipse" viewBox="0 0 32 32">
+<path fill="#fff" style="fill: var(--color2, #fff)" d="M0 16c0 8.837 7.163 16 16 16s16-7.163 16-16c0-8.837-7.163-16-16-16s-16 7.163-16 16z"></path>
+</symbol>
+
 <symbol id="icon-button-ham" viewBox="0 0 26 32">
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.542 3.2l16.825 12.8-16.825 12.8"></path>
 </symbol>
+  
 <symbol id="icon-close-ham" viewBox="0 0 32 32">
 <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.519 2l26.963 28"></path>
 <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2 29.481l28-26.963"></path>
