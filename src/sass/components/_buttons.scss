@@ -1,3 +1,4 @@
+
 .button {
   border: none;
   border-radius: 20px;
@@ -33,7 +34,6 @@
 }
 
 /* Tutaj macie stylowanie buttona */
-
 .btn {
   /*szerokość ustawcie sobie swoją.
   kolor fontu, i backgroundu, reszta jest */
@@ -50,8 +50,27 @@
 
 }
 
+.btn--read {
+  font-size: 14px;
+  line-height: 1.286;
+  text-align: center;
+  color: var(--secondary--color);
+  width: 176px;
+  background: var(--main-background-color);
+  margin-right: auto;
+  margin-left: 40px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  &:hover {
+    background-color: var(--color-hover-grey);
+  }
 
+}
 
-
+@media screen and (min-width: 768px) {
+  .btn--read {
+    margin-left: 0;
+  }
+}
 
