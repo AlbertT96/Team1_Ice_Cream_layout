@@ -4,12 +4,17 @@
   --main--color: #fff;
   --secondary--color: #d41443;
   --third--color: #ffa5ba;
+  --fourth--color: #000;
+  --fifth--color: #907E82;
   --color-hover-grey: #ECEBEB;
   --color-hover-red: #C7133E;
   --main-background-color: #fff;
   --secondary-background-color: #fff5f6;
+  --hamburger-background-color: #E17992;
+  --border-hamburger-menu: #E18298;
   --background-color-pink: #FFB8CA;
-
+  --contact-cafe-color: #f0d1a5;
+  --contact-food-color: #c2e297;
 }
 
 body {
@@ -35,12 +40,14 @@ ol {
 }
 p {
   padding: 0;
+  margin: 0;
 }
 li {
   list-style: none;
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 img {
   display: block;

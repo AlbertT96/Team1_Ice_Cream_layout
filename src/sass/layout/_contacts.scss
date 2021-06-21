@@ -1,0 +1,236 @@
+@media screen and (min-width: 320px) {
+  .contacts .container {
+    box-sizing: border-box;
+    display: block;
+    padding-bottom: 113px;
+    background-image: linear-gradient(
+      to bottom,
+      var(--main--color) 5%,
+      var(--secondary-background-color) 5%
+    );
+  }
+
+  .branch__container {
+    box-sizing: border-box;
+    width: calc(95vw - 100px);
+    height: auto;
+    margin: 20px auto;
+    padding: 43px 20px;
+    border-radius: 20px;
+    background-color: var(--main--color);
+    box-shadow: 0px -1px 15px 0px rgba(238, 199, 199, 0.3);
+    -webkit-box-shadow: 0px -1px 15px 0px rgba(238, 199, 199, 0.3);
+    -moz-box-shadow: 0px -1px 15px 0px rgba(238, 199, 199, 0.3);
+  }
+
+  .branch__name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin-bottom: 25px;
+  }
+
+  .branch__name-container--brown {
+    background-color: var(--contact-cafe-color);
+    width: 80px;
+    height: 16px;
+  }
+
+  .branch__name-container--green {
+    background-color: var(--contact-food-color);
+    width: 130px;
+    height: 16px;
+  }
+
+  .branch__name {
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: var(--main--color);
+  }
+
+  .branch__city {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: var(--fourth--color);
+    margin-bottom: 10px;
+  }
+  .branch__description {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--fifth--color);
+    margin-bottom: 25px;
+  }
+
+  .branch__border {
+    border-bottom: solid 1px rgba(225, 225, 225, 1);
+    margin-bottom: 25px;
+  }
+
+  .branch__days {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: var(--fourth--color);
+  }
+
+  .branch__hours {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: var(--third--color);
+  }
+
+  .working-day__list {
+    margin-bottom: 10px;
+  }
+
+  .weekend-day__list {
+    margin-bottom: 25px;
+  }
+
+  .tel__link,
+  .mail__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #907e82;
+    text-decoration: none;
+  }
+
+  /*=====CONTACTS BUTTONS =====*/
+}
+
+@media screen and (min-width: 768px) {
+  .contacts .container {
+    background-image: linear-gradient(
+      to bottom,
+      var(--main--color) 10%,
+      var(--secondary-background-color) 10%
+    );
+    padding-bottom: 158px;
+  }
+
+  .branch__container {
+    padding: 50px 31px;
+    margin: 0 auto;
+    width: calc((95vw - 72px) / 3);
+    margin-bottom: 0;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .branch__name-container {
+    margin-bottom: 30px;
+  }
+
+  .branch__name-container--brown {
+    width: 73px;
+    height: 28px;
+  }
+
+  .branch__name-container--green {
+    width: 138px;
+    height: 28px;
+  }
+
+  .branch__name {
+    font-size: 16px;
+  }
+
+  .branch__city {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+
+  .branch__description {
+    font-size: 14px;
+    line-height: 166%;
+    margin-bottom: 30px;
+  }
+
+  .branch__border {
+    margin-bottom: 30px;
+  }
+
+  .branch__days {
+    font-size: 14px;
+  }
+
+  .branch__hours {
+    font-size: 14px;
+  }
+  .tel__link,
+  .mail__link {
+    font-size: 14px;
+    line-height: 183%;
+  }
+
+  .weekend-day__list {
+    margin-bottom: 30px;
+  }
+
+  /*=====CONTACTS BUTTONS =====*/
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts .container {
+    padding-bottom: 165px;
+    background-image: url('../images/contacts/contacts-bgr.png'),
+      linear-gradient(to bottom, var(--main--color) 12%, var(--secondary-background-color) 12%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 23%;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .contacts .container {
+      background-image: url('../images/contacts/contacts-bgr@2x.png'),
+        linear-gradient(to bottom, var(--main--color) 12%, var(--secondary-background-color) 12%);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 50% 50%;
+    }
+  }
+
+  .branch__container {
+    width: calc((95vw - 230px) / 3);
+    max-width: 330px;
+    padding: 51px 68px 62px 43px;
+  }
+
+  .contacts-card__item:nth-child(1),
+  .contacts-card__item:nth-child(2) {
+    margin-right: 31px;
+  }
+
+  .contacts__list {
+    max-width: 1280px;
+    justify-content: center;
+  }
+
+  .branch__city,
+  .branch__description,
+  .branch__days,
+  .branch__hours,
+  .tel__link,
+  .mail__link {
+    font-size: 16px;
+  }
+}
