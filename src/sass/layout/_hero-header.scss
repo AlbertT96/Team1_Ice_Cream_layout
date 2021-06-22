@@ -106,7 +106,7 @@
       line-height: 1.313;
 
       cursor: pointer;
-      transition: color cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+      transition: color cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
 
       &:hover,
       &:active {
@@ -116,32 +116,7 @@
   }
 }
 
-// temporraty Button //
-
-// .temporrary-btn {
-//   border: none;
-//   background: #ffffff;
-//   border-radius: 22px;
-
-//   font-family: DM Sans;
-//   font-style: normal;
-//   font-weight: bold;
-//   font-size: 16px;
-//   line-height: 21px;
-//   display: flex;
-//   align-items: center;
-//   text-align: center;
-
-//   color: #d41443;
-// @media screen and (min-width: 768px) and (max-width: 1280px) {
-// }
-
-// @media screen and (min-width: 1280px) {
-// }
-// }
-
 .hero-header {
-  // z-index: -1;
   background-color: var(--background-color-pink);
   position: relative;
   overflow: hidden;
@@ -154,20 +129,20 @@
     height: 344px;
     top: 83px;
     left: calc(100vw - 310px);
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1000ms;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1500ms;
 
     @media screen and (min-width: 768px) and (max-width: 1280px) {
       width: 324px;
       height: 322px;
       top: 31px;
-      transform: translateX(-20vw);
+      transform: translateX(-16vw);
     }
 
     @media screen and (min-width: 1280px) {
       width: 538px;
       height: 538px;
       top: 52px;
-      transform: translateX(-38vw);
+      transform: translateX(-43vw);
     }
   }
 
@@ -178,13 +153,13 @@
     height: 410px;
     top: 92px;
     left: calc(100vw - 203px);
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2500ms;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1500ms;
 
     @media screen and (min-width: 768px) and (max-width: 1280px) {
       width: 143px;
       height: 336px;
       top: 63px;
-      transform: translateX(-25vw);
+      transform: translateX(-21vw);
     }
 
     @media screen and (min-width: 1280px) {
@@ -193,10 +168,10 @@
       top: 108px;
 
       animation-name: reSizer;
-      animation-duration: 3000ms;
+      animation-duration: 1500ms;
       animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 
-      transform: translateX(-36vw);
+      transform: translateX(-43vw);
     }
 
     @keyframes reSizer {
