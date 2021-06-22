@@ -73,9 +73,15 @@
 
   &-svg {
     // z-index: 5; w hamburger
-    position: absolute;
+    // position: absolute;
     background-color: transparent;
     border: none;
+    cursor: pointer;
+
+     @media screen and (min-width: 1280px) {
+      cursor: auto;
+      display: none;
+    }
   }
   
    &__buy--size {
