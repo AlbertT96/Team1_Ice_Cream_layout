@@ -1,4 +1,3 @@
-
 /* Tutaj macie stylowanie buttona */
 
 .btn {
@@ -78,23 +77,26 @@
     border: none;
     cursor: pointer;
 
-     @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1280px) {
       cursor: auto;
       display: none;
     }
   }
-  
-   &__buy--size {
+
+  &__buy--size {
     // Możliwe do zmiany
+    color: var(--main--color);
     width: 159px !important;
     height: 44px !important;
-  }
 
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+  }
 }
 
-
 /* ==== END HEADER-HERO ===*/
-
 
 .btn--read {
   font-size: 14px;
@@ -111,14 +113,12 @@
   &:hover {
     background-color: var(--color-hover-grey);
   }
-
 }
 
 @media screen and (min-width: 768px) {
   .btn--read {
     margin-left: 0;
   }
-
 }
 
 /* ==== CONTACTS BUTTONS ===*/
