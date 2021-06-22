@@ -1,58 +1,3 @@
-.button {
-  border: none;
-  border-radius: 20px;
-  font-family: var(--main-font);
-
-  &--hero-red {
-    width: 62.4px;
-    height: 24px;
-    background-color: var(--secondary--color);
-    color: var(--main--color);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 1.25;
-    text-align: center;
-
-    @media screen and (min-width: 1280px) {
-      width: 104px;
-      height: 40px;
-      font-size: 14px;
-      line-height: 1.286;
-    }
-  }
-
-  &--hero-white {
-    width: 82.8px;
-    height: 24px;
-    background-color: var(--main--color);
-    color: var(--secondary--color);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 1.25;
-    text-align: center;
-
-    @media screen and (min-width: 1280px) {
-      width: 138px;
-      height: 40px;
-      font-size: 14px;
-      line-height: 1.286;
-    }
-
-    // &:hover{
-    // background: red;
-    // }
-  }
-
-  &-svg {
-    // z-index: 5; w hamburger
-    position: absolute;
-    background-color: transparent;
-    border: none;
-  }
-}
-
 /* Tutaj macie stylowanie buttona */
 
 .btn {
@@ -69,7 +14,76 @@
   font-size: 16px;
   font-family: var(--main-font);
 
+  /* ==== HEADER-HERO BUTTONS ===*/
+
+  &--hero-red {
+    // Możliwe do zmiany
+    display: inline-block !important;
+    width: 62.4px;
+    height: 24px;
+    background-color: var(--secondary--color);
+    color: var(--main--color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: center;
+    transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+
+    @media screen and (min-width: 1280px) {
+      width: 104px;
+      height: 40px;
+      font-size: 14px;
+      line-height: 1.286;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #c7133e;
+    }
+  }
+
+  &--hero-white {
+    // Możliwe do zmiany
+    display: inline-block !important;
+    width: 82.8px;
+    height: 24px;
+    background-color: var(--main--color);
+    color: var(--secondary--color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: center;
+    transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+
+    @media screen and (min-width: 1280px) {
+      width: 138px;
+      height: 40px;
+      font-size: 14px;
+      line-height: 1.286;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+  }
+
+  &-svg {
+    // z-index: 5; w hamburger
+    position: absolute;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__buy--size {
+    // Możliwe do zmiany
+    width: 159px !important;
+    height: 44px !important;
+  }
 }
+/* ==== END HEADER-HERO ===*/
 
 /* ==== CONTACTS BUTTONS ===*/
 @media screen and (min-width: 320px) {
@@ -152,9 +166,3 @@
 }
 
 /* ==== END CONTACTS BUTTONS ===*/
-
-
-
-
-
-

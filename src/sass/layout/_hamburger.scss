@@ -6,11 +6,9 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  @media  screen and (min-width: 768px) {
-      display: none;
-      
+  @media screen and (min-width: 768px) {
+    display: none;
   }
-
 }
 
 .hamburger__close-btn {
@@ -20,11 +18,10 @@
   background: transparent;
   border: 1px solid transparent;
   color: var(--main--color);
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .hamburger-btn {
-
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -32,11 +29,11 @@
 }
 
 .btn__buy {
-    cursor:pointer;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin:0 auto;
+  margin: 0 auto;
   width: calc(100% - 34px);
   height: 44px;
   border: 1px solid transparent;
@@ -46,21 +43,21 @@
   font-size: 16px;
   color: var(--secondary--color);
   font-family: var(--main-font);
-  &:hover{
-      transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
-      background: var(--color-hover-grey);
+  &:hover {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    background: var(--color-hover-grey);
   }
 }
 
 .btn__svg {
-    margin-left:20px;
+  margin-left: 20px;
   width: 6px;
   height: 8px;
   fill: var(--secondary--color);
 }
-.btn__close{
-    width: 14px;
-    height: 14px;
+.btn__close {
+  width: 14px;
+  height: 14px;
 }
 
 .hamburger__menu {
@@ -70,13 +67,11 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-
 }
 
 .menu__list {
   padding: 0;
 }
-
 
 .menu__link {
   display: inline;
@@ -90,7 +85,7 @@
 
   &:focus,
   &:hover {
-      transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
     color: var(--secondary--color);
   }
 }
