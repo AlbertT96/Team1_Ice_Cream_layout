@@ -10,8 +10,9 @@
   position: fixed;
   display: flex;
   flex-direction: column;
+     z-index: 10;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 }
@@ -38,20 +39,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  width: calc(100% - 34px);
+
+
   height: 44px;
   border: 1px solid transparent;
-  background: var(--main-background-color);
+
   border-radius: 22px;
   font-weight: 700;
   font-size: 16px;
   color: var(--secondary--color);
   font-family: var(--main-font);
+
+}
+
+.ham {
+  margin: 0 auto;
+  width: calc(100% - 34px);
+  max-width: 400px;
+  background: var(--main-background-color);
+  color: var(--secondary--color);
+
   &:hover {
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
     background: var(--color-hover-grey);
   }
+
 }
 
 .btn__svg {
@@ -116,4 +128,11 @@
   position: relative;
   left: -24px;
   bottom: 5px;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 13%;
 }
