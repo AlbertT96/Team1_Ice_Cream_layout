@@ -1,0 +1,145 @@
+.advantages {
+  background-color: var(--secondary-background-color);
+  padding-bottom: 97px;
+  //   padding-top: 39px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.advantages__item {
+  width: 230px;
+  height: 156px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+
+  &:not(:last-child) {
+    margin-bottom: 38px;
+  }
+}
+
+
+
+
+.advantages__number {
+  font-family: var(--secondary-font);
+  font-size: 36px;
+  line-height: 1.139;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--secondary--color);
+
+}
+
+.advantages__item--icon-first::before {
+  content: "";
+  display: block;
+  width: 33px;
+  height: 50px;
+  background-image: url('../images/advantages/icon1.png');
+  //  background-repeat: no-repeat;
+
+
+}
+
+.advantages__item--icon-second::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/advantages/icon2.png');
+}
+
+.advantages__item--icon-third::before {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 50px;
+  background-image: url('../images/advantages/icon3.png');
+}
+
+.advantages__description {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.667;
+  color: var(--fourth--color);
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-bottom: 102px;
+  }
+
+
+  .advantages__item {
+    width: 180px;
+    height: 222px;
+    justify-content: center;
+    margin-bottom: 0;
+
+    &:first-child {
+      margin-left: 36px;
+    }
+
+    &:not(:last-child) {
+      //   margin-bottom: 0;
+      margin-right: 60px;
+    }
+  }
+
+  .advantages__number {
+    font-size: 48px;
+    line-height: 1.146;
+    margin-bottom: 13px;
+    margin-top: 36px;
+  }
+
+  .advantages__description {
+    font-size: 14px;
+    line-height: 1.714;
+
+  }
+}
+
+
+@media screen and (min-width: 1280px) {
+  .advantages {
+    padding-bottom: 109px;
+    padding-top: 39px;
+  }
+
+  .advantages__item {
+    width: 330px;
+    margin-bottom: 39px;
+    // margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .advantages__number {
+    font-size: 58px;
+    line-height: 1.138;
+    margin-bottom: 15px;
+    margin-top: 36px;
+  }
+
+  .advantages__description {
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+
+  }
+
+  .advantages__list {
+    justify-content: center;
+    align-items: center;
+  }
+}
