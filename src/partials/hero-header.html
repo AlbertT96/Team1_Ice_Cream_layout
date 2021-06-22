@@ -1,28 +1,130 @@
-<header class="hero-header ">
+<header class="hero-header">
     <div class="container">
+
+        <div class="header header--margin">
+
+            <ul class="header-list">
+                <li class="header-list__items logo">
+                    <picture>
+                        <img src="./images/hero-header/mobile/logo.png"
+                            srcset="./images/hero-header/mobile/logo.png 1x, ./images/hero-header/mobile/logo@2x.png 2x" alt="logo icecream">
+                    </picture>
+                </li>
+
+                <li class="header-list__items">
+                    <nav>
+                        <ul class="nav-list">
+                            <li class="nav-list__items"><a class="nav-list__link" href="#">Home</a></li>
+                            <li class="nav-list__items"><a class="nav-list__link" href="#">About us</a></li>
+                            <li class="nav-list__items"><a class="nav-list__link" href="#">How it’s made?</a></li>
+                            <li class="nav-list__items"><a class="nav-list__link" href="#">Our products</a></li>
+                            <li class="nav-list__items"><a class="nav-list__link" href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </li>
+            </ul>
+
+            <ul class="header-list">
+                <li class="header-list__items hamburger">
+                    <button class="button-svg">
+                        <svg width="20" height="12">
+                            <use href="./images/symbol-defs.svg#icon-Burger"></use>
+                        </svg>
+                    </button>
+                </li>
+                
+                <li class="header-list__items buy-now" >
+                    <button class="temporrary-btn">Buy now</button>
+                </li>
+            </ul>
+
+        </div>
 
         <ul class="header-list header-list--margin">
             <li class="header-list__items">
                <img src="./images/hero-header/mobile/logo.png" alt="icecream logo">
             </li>
-            <li class="header-list__items">
-                <button class=""><svg width="20" height="12">
+            <li class="header-list__items" >
+                <button class="button-svg" hamburger-open><svg width="20" height="12">
                         <use href="./images/symbol-defs.svg#icon-Burger"></use>
                     </svg></button>
             </li>
         </ul>
 
+
         <section class="hero hero--margin">
+
             <ul class="hero-list">
                 <li class="hero-list__items">
-                    <h1>ice cream made with <span>passion</span></h1>
+                    <h1 class="title-hero">ice cream made with <span class="title-hero title-hero--red">passion</span></h1>
                 </li>
-                <li class="hero-list__items"><button>Products</button></li>
-                <li class="hero-list__items"><button>How it’s made?</button></li>
+                <li class="hero-list__items"><button class="button button--hero-red">Products</button></li>
+                <li class="hero-list__items"><button class="button button--hero-white">How it’s made?</button></li>
             </ul>
+
+            <ul class="open-info">
+                <li class="open-info__items">
+                    <span class="open-info__time">16</span>
+                    <p class="open-info__place">cafes</p>
+                    <svg class="open-info__svg" >
+                        <use href="./images/symbol-defs.svg#icon-icon-white-ellipse"></use>
+                    </svg>
+                </li>
+                <li class="open-info__items">
+                    <span class="open-info__time">23</span>
+                    <p class="open-info__place">food trucks</p>
+                    <svg class="open-info__svg" >
+                        <use href="./images/symbol-defs.svg#icon-icon-white-ellipse"></use>
+                    </svg>
+                </li>
+            </ul>
+
+            <div class="hero-wrapper">
+
+            <ul class="hero__list-photo">
+                <li class=" milk">
+                    <picture>
+                        <source srcset="./images/hero-header/pc/img3.png 1x, ./images/hero-header/pc/img3@2x.png 2x"
+                            media="(min-width: 1280px)">
+                        <img class="" src="./images/hero-header/tablet/img3.png" alt="galss of milk">
+                    </picture>
+                </li>
+
+                <li class="text">
+                    <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                    <svg class="" width="18" height="18">
+                        <use href="./images/symbol-defs.svg#icon-icon-white-ellipse"></use>
+                    </svg>
+                </li>
+            </ul>
+
+            <ul class="hero__list-photo">
+                <li class="tasty">
+                    <picture>
+                        <source srcset="./images/hero-header/pc/img2.png 1x, ./images/hero-header/pc/img2@2x.png 2x"
+                            media="(min-width: 1280px)">
+                        <img src="./images/hero-header/tablet/img2.png" alt="icecream">
+                    </picture>
+                </li>
+            </ul>
+
+            </div>
         </section>
     </div>
 
-    <img class="hero-header__icecream" src="./images/hero-header/mobile/img1.png" alt="icecream">
+    <picture>
+        <source srcset="./images/hero-header/pc/img1.png 1x, ./images/hero-header/pc/img1@2x.png 2x"
+            media="(min-width: 1280px)">
+        <source srcset="./images/hero-header/tablet/img1.png 1x, ./images/hero-header/tablet/img1@2x.png 2x"
+            media="(min-width: 768px)">
+        <img class="hero-header__icecream" src="./images/hero-header/mobile/img1.png" alt="icecream">
+    </picture>
+
+    <svg  class="hero-header__circle-cut" width="346" height="344">
+        <use href="./images/symbol-defs.svg#icon-icon-pink-ellipse"></use>
+    </svg>
 
 </header>
+
+
+  

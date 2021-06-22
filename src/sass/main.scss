@@ -5,6 +5,17 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 @import './base/common';
-@import './layout/hero-header';
 
+@import './layout/contacts';
+
+@import './components/titles';
+@import './components/buttons';
+@import './components/is-hidden';
+
+@import './layout/hamburger';
+@import './layout/hero-header';
+@import './layout/products';
+@import './layout/about';
 @import './layout/footer';
+
+
