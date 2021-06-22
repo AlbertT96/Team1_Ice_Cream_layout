@@ -1,11 +1,16 @@
 .hamburger {
-  display: none;
+  visibility: visible;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   background-color: var(--hamburger-background-color);
   position: fixed;
   display: flex;
   flex-direction: column;
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -55,6 +60,7 @@
   height: 8px;
   fill: var(--secondary--color);
 }
+
 .btn__close {
   width: 14px;
   height: 14px;

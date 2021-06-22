@@ -1,3 +1,4 @@
+
 /* Tutaj macie stylowanie buttona */
 
 .btn {
@@ -76,14 +77,43 @@
     background-color: transparent;
     border: none;
   }
-
-  &__buy--size {
+  
+   &__buy--size {
     // Możliwe do zmiany
     width: 159px !important;
     height: 44px !important;
   }
+
 }
+
+
 /* ==== END HEADER-HERO ===*/
+
+
+.btn--read {
+  font-size: 14px;
+  line-height: 1.286;
+  text-align: center;
+  color: var(--secondary--color);
+  width: 176px;
+  background: var(--main-background-color);
+  margin-right: auto;
+  margin-left: 40px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: var(--color-hover-grey);
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .btn--read {
+    margin-left: 0;
+  }
+
+}
 
 /* ==== CONTACTS BUTTONS ===*/
 @media screen and (min-width: 320px) {
