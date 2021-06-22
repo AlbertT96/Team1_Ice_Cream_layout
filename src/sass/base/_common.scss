@@ -13,6 +13,8 @@
   --hamburger-background-color: #E17992;
   --border-hamburger-menu: #E18298;
   --background-color-pink: #FFB8CA;
+  --contact-cafe-color: #f0d1a5;
+  --contact-food-color: #c2e297;
 }
 
 body {
@@ -43,7 +45,7 @@ p {
 li {
   list-style: none;
 }
-link {
+a {
   text-decoration: none;
   color: inherit;
 }
