@@ -10,9 +10,9 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: 768px){
-    display:none;
-  
+
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
@@ -33,13 +33,21 @@
   margin-top: 60px;
 }
 
-.btn.ham {
+.btn__buy {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   width: calc(100% - 34px);
+  height: 44px;
+  border: 1px solid transparent;
   background: var(--main-background-color);
-  font-family: var(--main-font);
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
   color: var(--secondary--color);
-
+  font-family: var(--main-font);
   &:hover {
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
     background: var(--color-hover-grey);
