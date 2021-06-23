@@ -38,6 +38,7 @@
   background: #fea5bb;
   &:focus,
   &:hover {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
     background: #d41443;
     cursor: pointer;
   }
@@ -93,6 +94,7 @@
     margin-top: 0;
     padding-bottom: 0;
     margin-bottom: 16px;
+    margin-left: 5px;
   }
   .footer__slogan-two {
     width: 200px;
@@ -102,10 +104,15 @@
     padding: 0;
     margin-top: 0;
     margin-bottom: 43px;
+    margin-left: 5px;
+  }
+  .footer__social-list {
+    margin-right: 5px;
   }
   .footer__phone {
     padding-bottom: 43px;
     padding-top: 46px;
+    margin-right: 5px;
   }
 
   .footer__copyright {
@@ -114,7 +121,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .footer__slogan-one {
     width: 340px;
     height: 57px;
@@ -124,6 +131,7 @@
     margin-top: 0;
     padding-bottom: 0;
     margin-bottom: 16px;
+    margin-left: 21px;
   }
   .footer__slogan-two {
     width: 340px;
@@ -133,14 +141,17 @@
     padding: 0;
     margin-top: 0;
     margin-bottom: 61px;
+    margin-left: 21px;
   }
   .footer__social-list {
     position: relative;
     bottom: 250px;
+    margin-right: 21px;
   }
   .footer__phone {
     position: relative;
     bottom: 204px;
+    margin-right: 21px;
   }
   .footer__copyright {
     padding-top: 29px;
@@ -148,7 +159,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .footer__slogan-one {
     width: 472px;
     height: 34px;
@@ -158,6 +169,7 @@
     margin-top: 0;
     padding-bottom: 0;
     margin-bottom: 16px;
+    margin-left: 99px;
   }
   .footer__slogan-two {
     width: 474px;
@@ -167,14 +179,17 @@
     padding: 0;
     margin-top: 0;
     margin-bottom: 67px;
+    margin-left: 99px;
   }
   .footer__social-list {
     position: relative;
     bottom: 181px;
+    margin-right: 106px;
   }
   .footer__phone {
     position: relative;
     bottom: 128px;
+    margin-right: 106px;
   }
   .footer__copyright {
     padding-top: 9px;
