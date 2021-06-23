@@ -7,8 +7,8 @@
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 29.714h45.714"></path>
 </symbol>
 
-<symbol id="icon-pink-ellipse-cut" viewBox="0 0 26 32">
-<path fill="#ffa5ba" style="fill: var(--color1, #ffa5ba)" d="M32.186 16c0 8.837-7.205 16-16.093 16s-16.093-7.163-16.093-16c0-8.837 7.205-16 16.093-16s16.093 7.163 16.093 16z"></path>
+<symbol id="icon-pink-ellipse" viewBox="0 0 32 32">
+<path fill="#ffa5ba" style="fill: var(--color1, #ffa5ba)" d="M32.199 16c0 8.837-7.208 16-16.099 16s-16.099-7.163-16.099-16c0-8.837 7.208-16 16.099-16s16.099 7.163 16.099 16z"></path>
 </symbol>
 
 <symbol id="icon-button-arrow" viewBox="0 0 26 32">
