@@ -1,14 +1,14 @@
 (() => {
 const refs = {
-openModalBtn: document.querySelector('[hamburger-open]'),
-closeModalBtn: document.querySelector('[hamburger-close]'),
-modal: document.querySelector('[hamburger]'),
+openHamburger: document.querySelector('[data-hamburger-open]'),
+closeHamburger: document.querySelector('[data-hamburger-close]'),
+hamburger: document.querySelector('[data-hamburger]'),
 };
 
-refs.openModalBtn.addEventListener('click', toggleModal);
-refs.closeModalBtn.addEventListener('click', toggleModal);
+refs.openHamburger.addEventListener('click', toggleModal);
+refs.closeHamburger.addEventListener('click', toggleModal);
 
 function toggleModal() {
-refs.modal.classList.toggle('is-hidden');
+refs.hamburger.classList.toggle('is-hidden');
 }
 })();
