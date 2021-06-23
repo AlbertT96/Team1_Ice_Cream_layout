@@ -38,6 +38,7 @@
   background: #fea5bb;
   &:focus,
   &:hover {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
     background: #d41443;
     cursor: pointer;
   }
