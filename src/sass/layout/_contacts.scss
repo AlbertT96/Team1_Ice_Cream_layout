@@ -1,5 +1,5 @@
-@media screen and (min-width: 320px) {
-  .contacts .container {
+@media screen and (min-width: 100px) {
+  .contacts {
     box-sizing: border-box;
     display: block;
     padding-bottom: 113px;
@@ -109,7 +109,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .contacts .container {
+  .contacts {
     background-image: linear-gradient(
       to bottom,
       var(--main--color) 10%,
@@ -187,7 +187,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .contacts .container {
+  .contacts {
     padding-bottom: 165px;
     background-image: url('../images/contacts/contacts-bgr.png'),
       linear-gradient(to bottom, var(--main--color) 12%, var(--secondary-background-color) 12%);
@@ -200,7 +200,7 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .contacts .container {
+    .contacts {
       background-image: url('../images/contacts/contacts-bgr@2x.png'),
         linear-gradient(to bottom, var(--main--color) 12%, var(--secondary-background-color) 12%);
       background-repeat: no-repeat;
@@ -221,7 +221,6 @@
   }
 
   .contacts__list {
-    max-width: 1280px;
     justify-content: center;
   }
 
