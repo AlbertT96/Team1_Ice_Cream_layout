@@ -55,7 +55,7 @@
     font-size: 8px;
     line-height: 1.25;
     text-align: center;
-    transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+    transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1) 1000ms;
 
     @media screen and (min-width: 1280px) {
       width: 138px;
@@ -85,7 +85,7 @@
 
   &__buy--size {
     // Możliwe do zmiany
-    color: var(--main--color);
+    background-color: var(--main--color);
     width: 159px !important;
     height: 44px !important;
 
