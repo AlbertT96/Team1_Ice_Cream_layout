@@ -108,7 +108,8 @@
   margin-right: auto;
   margin-left: 40px;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+ 
 
   &:hover {
     background-color: var(--color-hover-grey);
