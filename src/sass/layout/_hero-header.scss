@@ -47,6 +47,10 @@
     background-color: transparent;
     transition: opacity cubic-bezier(0.075, 0.82, 0.165, 1) 1000ms;
 
+    @media screen and (min-width: 320px) and (max-width: 768px){
+      margin-right: 20px;
+    }
+
     @media screen and (min-width: 1280px) {
       opacity: 0;
     }
