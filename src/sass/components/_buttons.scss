@@ -55,7 +55,7 @@
     font-size: 8px;
     line-height: 1.25;
     text-align: center;
-    transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+    transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1) 1000ms;
 
     @media screen and (min-width: 1280px) {
       width: 138px;
@@ -85,7 +85,7 @@
 
   &__buy--size {
     // Możliwe do zmiany
-    color: var(--main--color);
+    background-color: var(--main--color);
     width: 159px !important;
     height: 44px !important;
 
@@ -106,9 +106,9 @@
   width: 176px;
   background: var(--main-background-color);
   margin-right: auto;
-  margin-left: 40px;
+  margin-left: auto;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 
   &:hover {
     background-color: var(--color-hover-grey);
@@ -122,7 +122,7 @@
 }
 
 /* ==== CONTACTS BUTTONS ===*/
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 100px) {
   .btn-location {
     display: block;
     margin-left: auto;
@@ -144,6 +144,7 @@
     &:hover,
     &:focus {
       background-color: #c7133e;
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
     }
   }
 
@@ -166,6 +167,7 @@
     &:hover,
     &:focus {
       background-color: #ecebeb;
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
     }
   }
 }
