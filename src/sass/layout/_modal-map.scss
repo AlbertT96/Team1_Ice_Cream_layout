@@ -1,0 +1,129 @@
+@media screen and (min-width: 320px) {
+  .modal-window,
+  .modal-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: calc(100vw - 30px);
+    min-height: 609px;
+    border-radius: 4px;
+
+    background-color: var(--white-color);
+    box-shadow: 0px 2px 7px -3px rgba(0, 0, 0, 0.72);
+    -webkit-box-shadow: 0px 2px 7px -3px rgba(0, 0, 0, 0.72);
+    -moz-box-shadow: 0px 2px 7px -3px rgba(0, 0, 0, 0.72);
+  }
+
+  .modal-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100vw;
+    min-height: 100%;
+    border-radius: 4px;
+
+    background-color: var(--white-color);
+    box-shadow: 0px 2px 7px -3px rgba(0, 0, 0, 0.72);
+    -webkit-box-shadow: 0px 2px 7px -3px rgba(0, 0, 0, 0.72);
+    -moz-box-shadow: 0px 2px 7px -3px rgba(0, 0, 0, 0.72);
+  }
+
+  .menu__list {
+    padding-top: 48px;
+    padding-bottom: 220px;
+  }
+
+  .menu__item {
+    padding-top: 48px;
+    padding-left: 40px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175px;
+    letter-spacing: 0.02em;
+    color: #212121;
+
+    &:hover,
+    &:focus {
+      color: var(--hover-color);
+    }
+  }
+
+  .menu-tel {
+    padding-left: 40px;
+    padding-bottom: 15px;
+
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.176;
+    letter-spacing: 0.02em;
+    color: var(--hover-color);
+  }
+
+  .menu-mail {
+    padding-left: 40px;
+    padding-bottom: 64px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.166;
+    letter-spacing: 0.02em;
+    color: var(--icon-color);
+  }
+
+  .menu-social__list {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.222px;
+    letter-spacing: 0.02em;
+    color: var(--hover-color);
+  }
+
+  .menu-mobile__icon:hover,
+  .menu-mobile__icon:focus {
+    fill: var(--hover-color);
+  }
+
+  .menu--accent {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: 0px;
+      right: -20%;
+      content: '';
+      display: block;
+      width: 1px;
+      height: 22px;
+      background-color: rgb(211, 205, 205);
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal-window {
+    max-width: 450px;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile__menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-window {
+    max-width: 528px;
+    min-height: 581px;
+  }
+}
