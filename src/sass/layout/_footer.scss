@@ -73,7 +73,7 @@
   }
 }
 
-.footer__copyright {
+.footer__bootom-line {
   font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
@@ -115,9 +115,14 @@
     margin-right: 5px;
   }
 
-  .footer__copyright {
+  .footer__bootom-line {
     padding-top: 22px;
     padding-bottom: 25px;
+  }
+  .footer__copyright {
+    width: 149px;
+    height: 42px;
+    margin: 0 auto;
   }
 }
 
@@ -153,7 +158,7 @@
     bottom: 204px;
     margin-right: 21px;
   }
-  .footer__copyright {
+  .footer__bootom-line {
     padding-top: 29px;
     padding-bottom: 18px;
   }
@@ -191,7 +196,7 @@
     bottom: 128px;
     margin-right: 106px;
   }
-  .footer__copyright {
+  .footer__bootom-line {
     padding-top: 9px;
     padding-bottom: 10px;
   }
