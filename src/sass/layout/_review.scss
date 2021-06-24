@@ -67,10 +67,13 @@ height: 83px;
 }
 
 .review__svg{
-content: '';
-fill: var(--svg--icon);
-z-index: +1;
-left: -1;
+    fill: var(--svg--icon);
+    /* width: 54px; */
+    height: 40px;
+    position: relative;
+    top: 0;
+    left: 20%;
+    opacity: 0.5;
 }
 .slides__text--uppertext{
   
