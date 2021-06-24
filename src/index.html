@@ -35,10 +35,42 @@
   <include src="./partials/footer.html"></include>
 
   <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
+  
   <script src="./index.js"></script>
 
-  <!-- Albert, tutaj podpiąłem js'a do hamburgera. Jeżeli ma być gdzieś indziej to przenieś -->
   <script src="../../Team1_Ice_Cream_layout/js/modal-mobilne-menu.js"></script>
+  <!-- <script src="../../Team1_Ice_Cream_layout/js/slider-review.js"></script> -->
+
+
+  <script>
+    var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+  </script>
+
 </body>
 
 </html>
