@@ -109,7 +109,6 @@
   margin-left: auto;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
- 
 
   &:hover {
     background-color: var(--color-hover-grey);
@@ -145,6 +144,7 @@
     &:hover,
     &:focus {
       background-color: #c7133e;
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
     }
   }
 
@@ -167,6 +167,7 @@
     &:hover,
     &:focus {
       background-color: #ecebeb;
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
     }
   }
 }
