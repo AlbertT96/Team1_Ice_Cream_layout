@@ -4,9 +4,16 @@
     display: block;
     background-image: linear-gradient(
       to bottom,
-      var(--main--color) 50%,
-      var(--secondary-background-color) 50%
+      var(--secondary-background-color) 50%,
+      var(--main--color) 50%
     );
+padding-bottom: 80px;
+  }
+  .gallery__background--pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
   }
 }
