@@ -1,0 +1,11 @@
+@media screen and (min-width: 320px) {
+  .gallery {
+    box-sizing: border-box;
+    display: block;
+    background-image: linear-gradient(
+      to bottom,
+      var(--main--color) 5%,
+      var(--secondary-background-color) 5%
+    );
+  }
+}
