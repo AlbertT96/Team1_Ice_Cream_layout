@@ -1,5 +1,5 @@
 .footer {
-  background: #fff5f6;
+  background: var(--secondary-background-color);
 }
 
 .footer__slogan-one {
@@ -8,7 +8,7 @@
   font-weight: normal;
 
   text-transform: uppercase;
-  color: #ffa5ba;
+  color: var(--third--color);
 }
 
 .footer__slogan-two {
@@ -17,7 +17,7 @@
   font-weight: normal;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: var(--secondary--color);
 }
 
 .footer__social-list {
@@ -35,11 +35,11 @@
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  background: #fea5bb;
+  background: var(--footer-color-one);
   &:focus,
   &:hover {
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
-    background: #d41443;
+    background: var(--secondary--color);
     cursor: pointer;
   }
 }
@@ -63,10 +63,10 @@
   font-size: 12px;
   line-height: 1.833px;
   text-align: right;
-  color: #000000;
+  color: var(--fourth--color);
 }
 .phone__style {
-  color: #d41443;
+  color: var(--secondary--color);
   &:hover,
   &:focus {
     cursor: pointer;
@@ -80,8 +80,8 @@
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
-  color: #907e82;
-  border-top: 1px solid #e1e1e1;
+  color: var(--fifth--color);
+  border-top: 1px solid var(--footer-color-two);
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
